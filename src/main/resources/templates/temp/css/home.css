@@ -1,0 +1,107 @@
+.bgcolor {
+  background-color: rgb(243, 243, 243);
+}
+
+.nav {
+  background-color: white;
+}
+
+.btnhover:hover {
+  background-color: rgb(0, 0, 255); 
+}
+.pname {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.blank {
+  margin-bottom: 20px;
+}
+
+.resume {
+  background-color: #eea43f;
+  width: 120px;
+  height: 120px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  font-weight: 700;
+  font-size: 100%;
+  margin-right: 10px;
+}
+
+.resume:hover {
+  background-color: #f2be76;
+  box-shadow: 0 0 0 3px #000 inset; 
+}
+
+.project {
+  background-color: rgb(61, 135, 227);
+  width: 120px;
+  height: 120px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  font-weight: 700;
+  font-size: 100%;
+  margin-right: 10px;
+}
+
+.project:hover {
+  background-color: rgb(117, 166, 225);
+  box-shadow: 0 0 0 3px #000 inset; 
+}
+
+.contact {
+  background-color: rgb(83, 170, 150);
+  width: 120px;
+  height: 120px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.contact:hover {
+  background-color: rgb(142, 182, 172);
+  box-shadow: 0 0 0 3px #000 inset; 
+}
+
+.phrase {
+  margin-bottom: 10px;
+}
+.container {
+  /* margin: 0 auto; */
+  /* margin-left: 10%; */
+  /* margin-bottom: 120px;
+  padding: 0px 20px 20px 20px; */
+}
+.img {
+  border-radius: 50%;
+
+  /* margin: 0 auto; */
+  /* text-align: center;
+  justify-content: center; */
+}
+
+.home-container {
+  margin-top: 30px;
+  margin: 0 auto;
+  width: 100vh;
+}
+
+.mb {
+  margin-bottom: 10%;
+}
+
+.hello {
+  font-weight: 700;
+  font-size: 4rem;
+}
