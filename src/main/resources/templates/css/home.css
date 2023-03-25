@@ -29,6 +29,11 @@
   margin-right: 10px;
 }
 
+.resume:hover {
+  background-color: #f2be76;
+  box-shadow: 0 0 0 3px #000 inset; 
+}
+
 .project {
   background-color: rgb(61, 135, 227);
   width: 120px;
@@ -43,6 +48,11 @@
   margin-right: 10px;
 }
 
+.project:hover {
+  background-color: rgb(117, 166, 225);
+  box-shadow: 0 0 0 3px #000 inset; 
+}
+
 .contact {
   background-color: rgb(83, 170, 150);
   width: 120px;
@@ -54,6 +64,11 @@
   line-height: 120px;
   font-weight: 700;
   font-size: 100%;
+}
+
+.contact:hover {
+  background-color: rgb(142, 182, 172);
+  box-shadow: 0 0 0 3px #000 inset; 
 }
 
 .phrase {
