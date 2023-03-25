@@ -10,10 +10,11 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/survey_form.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <title>Resume</title>
   </head>
   <body class="bgcolor">
+    <!-- Navbar -->
     <header
       class="shadow-sm p-3 d-flex flex-wrap justify-content-center py-3 nav"
     >
@@ -28,69 +29,83 @@
         <li class="nav-item">
           <a href="#" class="nav-link active rounded-pill">로그인</a>
         </li>
-        <!-- <li class="nav-item"><a href="#" class="nav-link">로그인</a></li> -->
+        <li class="nav-item"><a href="#" class="nav-link">회원가입</a></li>
       </ul>
     </header>
-    <main class="p-3 main">
-      <div class="container">
-        <div class="pname">Byeongju Park</div>
-        <br />
+
+    <!-- main -->
+    <div class="p-3 mb-5" style="float: right">
+      이력서 | 포트폴리오 | 연락 문의
+    </div>
+    <main class="mt-5 p-3">
+      <div class="home-container">
+        <div>
+          <span>
+            <div class="pname">Byeongju Park</div>
+          </span>
+        </div>
         <div class="blank"></div>
         <!-- 개인사진(병주) -->
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img
-                class="img"
-                src="../img/0FC9AB54-92A7-417F-8A9C-5E96CA9ACD45.png"
-                alt=""
-                width="300"
-                height="300"
-              />
-            </div>
-            <div class="col-8 phrase">
-              <h1>안녕하세요!</h1>
-              <h3 class="mb-3">A Bit About Me</h3>
-              <div class="mb-3">내 소개</div>
-              <div class="row">
-                <button class="resume">이력서</button>
-                <div class="col">
-                  <button class="project">포트폴리오</button>
-                </div>
-              </div>
-              <!-- <div class="circle">이력서</div>  -->
-            </div>
-          </div>
-        </div>
-        <div class="pname">Seonah Yun</div>
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img
-                class="img"
-                src="../img/22021046.jpg"
-                alt=""
-                width="300"
-                height="300"
-              />
-            </div>
-            <div class="col-8 phrase">
-              <h1>안녕하세요!</h1>
-              <h3 class="mb-3">내 이름은</h3>
-              <div class="mb-3">내 소개</div>
-              <div class="row">
-                <button class="resume">이력서</button>
-                <div class="col">
-                  <button class="project">포트폴리오</button>
-                </div>
-              </div>
-              <!-- <div class="circle">이력서</div>  -->
-            </div>
-          </div>
-        </div>
+        <div style="display: inline-block">
+          <img
+            class="img"
+            src="../img/22021046.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div
+            style="
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 30px;
+            "
+          >
+            <h1 class="hello">Hello!</h1>
+            <h3 class="mb-3">A Bit About Me</h3>
+            <div class="mb-3">내 소개</div>
 
-        <footer></footer>
+            <div class="col">
+              <button class="resume">이력서</button>
+              <button class="project">포트폴리오</button>
+              <button class="contact">연락 문의</button>
+            </div>
+            <!-- <div class="circle">이력서</div>  -->
+          </div>
+        </div>
+        <!-- 선아 -->
+        <div class="mb"></div>
+        <div class="pname">Seonah Yun</div>
+        <div class="blank"></div>
+        <div style="display: inline-block">
+          <img
+            class="img"
+            src="../img/22021046.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div
+            style="
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 30px;
+            "
+          >
+            <div class="hello">Hello!</div>
+            <h3 class="mb-3">A Bit About Me</h3>
+            <div class="mb-3">내 소개</div>
+            <div class="col">
+              <button class="resume">이력서</button>
+              <button class="project">포트폴리오</button>
+              <button class="contact">연락 문의</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <footer>
+      <div class=""></div>
+    </footer>
   </body>
 </html>
