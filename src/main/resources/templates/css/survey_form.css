@@ -1,0 +1,64 @@
+.form-control {
+  width: 70%;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.bgcolor {
+  background-color: rgb(243, 243, 243);
+}
+
+.nav {
+  background-color: white;
+}
+
+.pname {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.blank {
+  margin-bottom: 20px;
+}
+
+.resume {
+  width: 150px;
+  height: 150px;
+  background-color: #eea43f;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.project {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(61, 135, 227);
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.phrase {
+  margin-bottom: 10px;
+}
+.container {
+  margin-left: 10%;
+  /* margin-right: 10%; */
+
+  margin-bottom: 100px;
+  padding: 0px 20px 20px 20px;
+}
+.img {
+  border-radius: 50%;
+}
