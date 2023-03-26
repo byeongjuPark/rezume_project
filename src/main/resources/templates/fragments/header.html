@@ -2,7 +2,8 @@
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <h2>프로젝트 이름</h2>
     </a>
-
+<!--USER 권한을 갖는다면 이 글이 보임 /근데 왜 안보여?-->
+<h1 sec:authorize="hasRole('USER')">Has user Role</h1> 
 
     <!-- 비인증자에게만 노출 -->
     <!-- sec:authorize="isAnonymous()" -->
@@ -15,8 +16,7 @@
             <button type="button" class="nav-link btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
                 로그인
             </button>
-            <!--ROLE_ADMIN 권한을 갖는다면 이 글이 보임-->
-            <h1 sec:authorize="hasRole('USER')">Has user Role</h1> 
+            
             <!-- Modal -->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
