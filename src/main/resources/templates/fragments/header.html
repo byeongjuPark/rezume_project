@@ -4,7 +4,9 @@
     </a>
 
 
-    <ul class="nav nav-pills">
+    <!-- 비인증자에게만 노출 -->
+    <!-- sec:authorize="isAnonymous()" -->
+    <ul class="nav nav-pills" sec:authorize="isAnonymous()">
         <li
             class="nav-item">
             <!-- <button type="button" class="nav-link btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -13,7 +15,8 @@
             <button type="button" class="nav-link btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
                 로그인
             </button>
-
+            <!--ROLE_ADMIN 권한을 갖는다면 이 글이 보임-->
+            <h1 sec:authorize="hasRole('USER')">Has user Role</h1> 
             <!-- Modal -->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -23,16 +26,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form action="#" method="post">
+                            <!-- login form -->
+                            <form method="POST" action="/api/login">
                                 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control " id="floatingInput" placeholder="ID">
-                                    <label for="floatingInput">ID</label>
+                                    <input type="text" class="form-control " id="username" name="username" placeholder="ID">
+                                    <label for="username">ID</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                    <label for="floatingPassword">Password</label>
+                                    <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
+                                    <label for="Password">Password</label>
                                 </div>
                                 <button class="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
                             </form>
@@ -43,7 +47,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link btn btn-success rounded-pill">회원가입</a>
+            <a href="/register" class="nav-link btn btn-success rounded-pill">회원가입</a>
         </li>
     </ul>
 </header>
