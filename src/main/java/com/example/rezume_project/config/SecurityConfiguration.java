@@ -1,14 +1,22 @@
 package com.example.rezume_project.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 @Configuration
 public class SecurityConfiguration {
+    
+    private final AuthenticationFailureHandler customFailureHandler;    //@RequiredArgsConstructor랑 같이 써야 final이 의존성 주입 됨.
+    
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception{
         httpSecurity
@@ -20,6 +28,7 @@ public class SecurityConfiguration {
             .formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/api/login")
+                .failureHandler(customFailureHandler)
                 .defaultSuccessUrl("/")
             .and()
                 .logout()
