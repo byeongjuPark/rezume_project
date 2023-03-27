@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/contact.css}" />
+    <link rel="stylesheet" href="/src/main/resources/static/css/contact.css" />
+    <title>프로젝트</title>
+  </head>
+  <body class="bgcolor">
+    <!-- header -->
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+    <!-- main -->
+    <div class="p-5 mb-5" style="float: right">
+      <a href="./resume.html" class="border-dark border-end">이력서</a>
+      <a href="./project.html" class="border-dark border-end">포트폴리오</a>
+      <a href="./contact.html" class="border-dark">연락 문의</a>
+    </div>
+    <main class="mt-5 p-3">
+      <div class="home-container">
+        <div class="mb-5 blank">
+          <span>
+            <div class="pname">Byeongju Park</div>
+          </span>
+        </div>
+
+        <!-- 포트폴리오 -->
+        <div style="display: inline-block; vertical-align: top">
+          <h2>연락 문의</h2>
+          <p>Looking forward to hearing from you</p>
+          <br />
+          <div>Phone</div>
+          <div>123-456-7890</div>
+          <br />
+          <div>Email *</div>
+          <div>example@mysite.com</div>
+        </div>
+        <div style="display: inline-block; margin-left: 100px">
+          <div>이름 *</div>
+          <input type="text" name="" id="" />
+          <div>Email *</div>
+          <input type="email" name="" id="" />
+          <div></div>
+          <div>메세지</div>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class=""></div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

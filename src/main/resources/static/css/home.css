@@ -1,3 +1,7 @@
+* {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
 .bgcolor {
   background-color: rgb(243, 243, 243);
 }
@@ -7,7 +11,7 @@
 }
 
 .btnhover:hover {
-  background-color: rgb(0, 0, 255); 
+  background-color: rgb(0, 0, 255);
 }
 .pname {
   font-weight: 700;
@@ -34,7 +38,7 @@
 
 .resume:hover {
   background-color: #f2be76;
-  box-shadow: 0 0 0 3px #000 inset; 
+  box-shadow: 0 0 0 3px #000 inset;
 }
 
 .project {
@@ -53,7 +57,7 @@
 
 .project:hover {
   background-color: rgb(117, 166, 225);
-  box-shadow: 0 0 0 3px #000 inset; 
+  box-shadow: 0 0 0 3px #000 inset;
 }
 
 .contact {
@@ -71,7 +75,7 @@
 
 .contact:hover {
   background-color: rgb(142, 182, 172);
-  box-shadow: 0 0 0 3px #000 inset; 
+  box-shadow: 0 0 0 3px #000 inset;
 }
 
 .phrase {
@@ -104,4 +108,17 @@
 .hello {
   font-weight: 700;
   font-size: 4rem;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.border-dark {
+  padding: 7px;
+  color: #000;
+}
+
+.border-dark:hover {
+  color: rgb(157, 116, 49);
 }

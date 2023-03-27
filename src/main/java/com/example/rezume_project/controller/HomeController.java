@@ -11,4 +11,10 @@ public class HomeController {
     return "content/home";
   }
 
+
+  @GetMapping({"/project"})
+  public String project() {
+    return "content/project";
+  }
+
 }
