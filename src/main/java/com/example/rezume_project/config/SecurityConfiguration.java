@@ -32,6 +32,9 @@ public class SecurityConfiguration {
                 .defaultSuccessUrl("/")
             .and()
                 .logout()
+                .logoutUrl("/logout") // /logout post 방식
+                .logoutSuccessUrl("/")
+                .invalidateHttpSession(true)
             .and()
                 .csrf().disable();
 
