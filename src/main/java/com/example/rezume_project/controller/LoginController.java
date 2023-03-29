@@ -15,11 +15,11 @@ public class LoginController {
         model.addAttribute("error", error);
         model.addAttribute("exception", exception);
         
-        return "content/user/login";
+        return "user/login";
     }
 
     @GetMapping("/register")
     public String register() {
-        return "content/user/register";
+        return "user/register";
     }
 }

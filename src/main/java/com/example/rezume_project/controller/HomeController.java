@@ -10,11 +10,20 @@ public class HomeController {
   public String home() {
     return "content/home";
   }
-
+  
+    @GetMapping({"/resume"})
+    public String resume() {
+      return "content/resume";
+    }
 
   @GetMapping({"/project"})
   public String project() {
     return "content/project";
+  }
+
+  @GetMapping({"/contact"})
+  public String contact() {
+    return "content/contact";
   }
 
 }
