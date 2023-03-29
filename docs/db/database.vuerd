@@ -1,0 +1,469 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -97.4999961256982,
+    "scrollLeft": -9.999999602635718,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "member",
+        "comment": "회원",
+        "columns": [
+          {
+            "name": "uid",
+            "comment": "회원번호",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4cfbe3b6-e153-4d9d-9edb-81c1ba826e97"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 17.3161,
+          "top": 221.4799,
+          "zIndex": 112,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "6aaa66dc-66eb-45bc-a91e-11eedf56f593"
+      },
+      {
+        "name": "",
+        "comment": "이력",
+        "columns": [
+          {
+            "name": "uid",
+            "comment": "이력UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d7ad3535-b41c-46de-af8d-8003745c6d6d"
+          },
+          {
+            "name": "uid",
+            "comment": "회원번호",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2ae0e3e3-de67-4f2c-aa83-ebbc143d5f24"
+          },
+          {
+            "name": "",
+            "comment": "이력 타입",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5a23d98f-fc14-4a24-ac51-97ab2c278d6d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 486.4815,
+          "top": 131.758,
+          "zIndex": 157,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "5a8b8360-0a2e-4c8b-bc67-d9234bd15825"
+      },
+      {
+        "name": "",
+        "comment": "사회경험",
+        "columns": [
+          {
+            "name": "uid",
+            "comment": "이력UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3a9d85a7-305a-44c7-bc87-72da9f85a5b2"
+          },
+          {
+            "name": "",
+            "comment": "사회경험UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.38818359375,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fc52e6f6-8685-4159-babf-ab186480afa8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 990.6486,
+          "top": 23.3342,
+          "zIndex": 165,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "51645a34-71ed-4659-bbd3-edb74f0d7be4"
+      },
+      {
+        "name": "",
+        "comment": "학력",
+        "columns": [
+          {
+            "name": "uid",
+            "comment": "이력UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ad807134-30f3-4552-a64b-5f98907a517d"
+          },
+          {
+            "name": "",
+            "comment": "학력UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "003f2ec3-8d1c-42ad-b22e-7a3f112211b1"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1073.8872,
+          "top": 325.2766,
+          "zIndex": 169,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "98a1ae06-1185-4dd7-a3f0-60b81e197026"
+      },
+      {
+        "name": "",
+        "comment": "기술",
+        "columns": [
+          {
+            "name": "uid",
+            "comment": "이력UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d535c2b1-e4ae-43e3-8e32-b98f29891f20"
+          },
+          {
+            "name": "",
+            "comment": "기술UID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4802c7aa-39c8-4181-a6d3-3333b5c11b73"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 876.6668,
+          "top": 499.9997,
+          "zIndex": 173,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "86067105-4b96-4499-ad1f-0165ce2009b7"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "6aaa66dc-66eb-45bc-a91e-11eedf56f593",
+          "columnIds": [
+            "4cfbe3b6-e153-4d9d-9edb-81c1ba826e97"
+          ],
+          "x": 364.3161,
+          "y": 266.2299,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "5a8b8360-0a2e-4c8b-bc67-d9234bd15825",
+          "columnIds": [
+            "2ae0e3e3-de67-4f2c-aa83-ebbc143d5f24"
+          ],
+          "x": 486.4815,
+          "y": 197.008,
+          "direction": "left"
+        },
+        "constraintName": "fk_member_to_",
+        "visible": true,
+        "id": "6ad0efd9-9852-4f39-bc46-d76cb15158b5"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5a8b8360-0a2e-4c8b-bc67-d9234bd15825",
+          "columnIds": [
+            "d7ad3535-b41c-46de-af8d-8003745c6d6d"
+          ],
+          "x": 833.4815,
+          "y": 153.508,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "51645a34-71ed-4659-bbd3-edb74f0d7be4",
+          "columnIds": [
+            "fc52e6f6-8685-4159-babf-ab186480afa8"
+          ],
+          "x": 990.6486,
+          "y": 78.3342,
+          "direction": "left"
+        },
+        "constraintName": "fk__to_",
+        "visible": true,
+        "id": "21afccee-130b-4c35-9c4e-f9b57d0ec79f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5a8b8360-0a2e-4c8b-bc67-d9234bd15825",
+          "columnIds": [
+            "d7ad3535-b41c-46de-af8d-8003745c6d6d"
+          ],
+          "x": 833.4815,
+          "y": 197.008,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "98a1ae06-1185-4dd7-a3f0-60b81e197026",
+          "columnIds": [
+            "003f2ec3-8d1c-42ad-b22e-7a3f112211b1"
+          ],
+          "x": 1073.8872,
+          "y": 380.2766,
+          "direction": "left"
+        },
+        "constraintName": "fk__to_",
+        "visible": true,
+        "id": "f7a1e13a-a6f3-49f9-b98a-a9bba540bfba"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5a8b8360-0a2e-4c8b-bc67-d9234bd15825",
+          "columnIds": [
+            "d7ad3535-b41c-46de-af8d-8003745c6d6d"
+          ],
+          "x": 833.4815,
+          "y": 240.508,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "86067105-4b96-4499-ad1f-0165ce2009b7",
+          "columnIds": [
+            "4802c7aa-39c8-4181-a6d3-3333b5c11b73"
+          ],
+          "x": 876.6668,
+          "y": 554.9997000000001,
+          "direction": "left"
+        },
+        "constraintName": "fk__to_",
+        "visible": true,
+        "id": "848b3bdb-1166-44e5-868e-06955eba5241"
+      }
+    ]
+  }
+}
