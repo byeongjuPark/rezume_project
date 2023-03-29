@@ -23,9 +23,9 @@
     <th:block th:replace="~{fragments/header :: header}"></th:block>
     <!-- main -->
     <div class="p-5 mb-5" style="float: right">
-      <a href="./resume.html" class="border-dark border-end">이력서</a>
-      <a href="./project.html" class="border-dark border-end">포트폴리오</a>
-      <a href="./contact.html" class="border-dark">연락 문의</a>
+      <a th:href="@{resume}" class="border-dark border-end">이력서</a>
+      <a th:href="@{project}" class="border-dark border-end">포트폴리오</a>
+      <a th:href="@{contact}" class="border-dark">연락 문의</a>
     </div>
     <main class="mt-5 p-3">
       <div class="home-container">
