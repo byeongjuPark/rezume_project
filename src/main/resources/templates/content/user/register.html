@@ -13,13 +13,13 @@
         <th:block th:replace="~{fragments/header :: header}"></th:block>
         <div class="container">
             <div class="row justify-content-md-center mt-5">
-                <form style="width: 500px;" id="form-register" onsubmit="return false;">
+                <form style="width: 500px;" id="form-register" action="/">
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="username" name="username" type="text" placeholder="ID" required>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="ID" required>
                         <label for="username">ID</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="password" name="password" type="password" placeholder="password" required>
+                        <input type="password" class="form-control" id="password" name="password"  placeholder="password" required>
                         <label for="password">PASSWORD</label>
                     </div>
                     <div class="form-floating mb-3">

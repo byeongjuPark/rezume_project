@@ -7,8 +7,7 @@
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                // 'id': document.getElementById('username').value,
-                'id': document.getElementById('id').value,
+                'id': document.getElementById('username').value,
                 'password': document.getElementById('password').value,
                 'authority': 'USER',
                 'name': document.getElementById('name').value,

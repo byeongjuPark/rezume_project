@@ -2,12 +2,8 @@ package com.example.rezume_project.domain.authority;
 
 import java.beans.Transient;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,14 +14,7 @@ import lombok.Setter;
 @Getter
 @Entity(name = "MEMBER")
 public class Member {
-    // id 컬럼을 MEMBER 테이블의 기본키로 설정
     @Id
-    // @GeneratedValue(strategy = GenerationType.AUTO)
-    @SequenceGenerator(name = "USER_SEQ_GENERATOR"
-                        , sequenceName = "USER_SEQ"
-                        , initialValue = 1
-                        , allocationSize = 1)
-    private int member_uid;
     private String id;
     private String password;
     private MemberAuthority authority;
@@ -51,7 +40,6 @@ public class Member {
     @Setter
     @NoArgsConstructor
     public static class SaveRequest {
-        private int member_uid;
         private String id;
         private String password;
         private MemberAuthority authority;
