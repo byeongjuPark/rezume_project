@@ -7,16 +7,21 @@
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                'id': document.getElementById('username').value,
+                // 'id': document.getElementById('username').value,
+                'id': document.getElementById('id').value,
                 'password': document.getElementById('password').value,
-                'authority': 'USER'
+                'authority': 'USER',
+                'name': document.getElementById('name').value,
+                'name_en': document.getElementById('name_en').value,
+                'email': document.getElementById('email').value,
+                'phone': document.getElementById('phone').value
             })
         })
         .then((res) => {
             console.log('success')
         })
         .catch((err) => {
-            console.error('error occured')
+            console.error('error occurred')
         })
     })
 })();
