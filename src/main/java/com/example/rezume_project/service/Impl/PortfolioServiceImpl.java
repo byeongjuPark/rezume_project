@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.rezume_project.domain.authority.Member;
 import com.example.rezume_project.domain.authority.Portfolio;
 import com.example.rezume_project.repository.PortfolioRepository;
 import com.example.rezume_project.service.PortfolioService;
@@ -26,17 +27,18 @@ public class PortfolioServiceImpl implements PortfolioService {
     @Override
     public void addPortfolio(String name, String description, String date, MultipartFile file) {
         Portfolio portfolio = new Portfolio();
-        portfolio.setName(name);
-        portfolio.setDescription(description);
-        portfolio.setDate(date);
+    
+        portfolio.setPortfolioUid(null);
+        portfolio.setProjectType(date);
+        portfolio.setProjects(null);
 
-        if (file != null && !StringUtils.isEmpty(file.getOriginalFilename())) {
-            try {
-                portfolio.setFile(file.getBytes());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+        // if (file != null && !StringUtils.isEmpty(file.getOriginalFilename())) {
+        //     try {
+        //         portfolio.setFile(file.getBytes());
+        //     } catch (IOException e) {
+        //         e.printStackTrace();
+        //     }
+        // }
 
         portfolioRepository.save(portfolio);
     }

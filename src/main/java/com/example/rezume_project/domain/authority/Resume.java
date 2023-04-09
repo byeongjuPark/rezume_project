@@ -7,14 +7,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name = "resume")
 @Getter
 @Setter
-@NoArgsConstructor
 public class Resume {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,4 +25,13 @@ public class Resume {
     @Column(name = "resume_type")
     private String resume_type;
 
+    public void setResume_type(String resume_type) {
+        this.resume_type = resume_type;
+    }
+
+    public Resume(String id, String resume_type) {
+        this.id = id;
+        this.resume_type = resume_type;
+    }
+    
 }

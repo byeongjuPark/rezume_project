@@ -29,9 +29,9 @@ public class Portfolio {
     @Column(name = "portfolio_uid")
     private Integer portfolioUid;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "member_uid", referencedColumnName = "member_uid")
-    private Member member;
+    // @ManyToOne(fetch = FetchType.LAZY)
+    // @JoinColumn(name = "", referencedColumnName = "")
+    // private Member member;
 
     @Column(name = "project_type")
     private String projectType;
