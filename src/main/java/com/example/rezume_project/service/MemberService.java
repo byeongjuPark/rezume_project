@@ -36,6 +36,7 @@ public class MemberService implements UserDetailsService {
         return toUserDetails(member);
     }
 
+    // member 엔티티를 UserDetails 객체로 변환하는 역할
     private UserDetails toUserDetails(Member member) {
         return User.builder()
             .username(member.getId())

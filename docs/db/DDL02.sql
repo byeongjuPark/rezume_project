@@ -44,7 +44,7 @@ CREATE TABLE project
 (
   portfolio_uid   INTEGER      NOT NULL COMMENT '포트폴리오UID',
   project_uid     INTEGER      NOT NULL COMMENT '프로젝트UID',
-  image           VARCHAR(255) NULL     COMMENT '프로젝트 이미지',
+  file           VARCHAR(255) NULL     COMMENT '프로젝트 이미지',
   project_name    VARCHAR(255) NULL     COMMENT '프로젝트 이름',
   project_content VARCHAR(255) NULL     COMMENT '프로젝트 내용',
   PRIMARY KEY (project_uid)
