@@ -19,21 +19,30 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "portfolio")
+@Getter
+@Setter
+@NoArgsConstructor
+@Table(name = "project")
 public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "portfolio_uid")
-    private Integer portfolioUid;
+    @Column(name = "project_uid")
+    private Integer projectUid;
 
-    @Column(name = "project_type")
-    private String projectType;
+    @Column(name = "file")
+    private String file;
 
-    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Project> projects = new ArrayList<>();
-    
-    // getters and setters
+    @Column(name = "project_name")
+    private String projectName;
+
+    @Column(name = "project_content")
+    private String projectContent;
+
+    @ManyToOne
+    @JoinColumn(name = "portfolio_uid")
+    private Portfolio portfolio;
+
+    // getter, setter, constructor
 }
-
 
 

@@ -29,17 +29,15 @@ public class Portfolio {
     @Column(name = "portfolio_uid")
     private Integer portfolioUid;
 
-    // @ManyToOne(fetch = FetchType.LAZY)
-    // @JoinColumn(name = "", referencedColumnName = "")
-    // private Member member;
-
     @Column(name = "project_type")
     private String projectType;
 
     @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Project> projects = new ArrayList<>();
-    
-    // getters and setters
+    private List<Project> project = new ArrayList<>();
+
+    // getter, setter, constructor
 }
+
+
 
 

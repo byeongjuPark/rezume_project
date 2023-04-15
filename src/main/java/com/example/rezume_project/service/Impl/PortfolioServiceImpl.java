@@ -30,7 +30,7 @@ public class PortfolioServiceImpl implements PortfolioService {
     
         portfolio.setPortfolioUid(null);
         portfolio.setProjectType(date);
-        portfolio.setProjects(null);
+        portfolio.setProject(null);
 
         // if (file != null && !StringUtils.isEmpty(file.getOriginalFilename())) {
         //     try {
